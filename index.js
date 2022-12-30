@@ -14,7 +14,7 @@ const client = new Client({
   ],
 });
 client.config = require('./config.json');
-client.poru = new Poru(client, client.nodes.nodes, {
+client.poru = new Poru(client, client.config.nodes, {
     clientID: 'cb41529dc3bd4d8f8a240dbee0fff4e8',
     clientSecret: 'bcca82f42930498aa385a8289fdf276b',
     playlistLimit: 5,
